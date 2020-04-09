@@ -6,11 +6,8 @@
 <body>
 <img src="${pageContext.request.contextPath}/resources/images/springboot.jpg">
 
-
-"IN SILLY CONTROLLER"
-
-<a href="/"> Home Page</a>
+"Welcome to Silly Controller."
 
 </body>
-
-</head></html>
+</head>
+</html>

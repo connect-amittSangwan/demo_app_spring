@@ -10,8 +10,8 @@
 
 <form
         action="processFormWithRequestParams" method="get">
-    <input type="text" name="studentName"
-           placeholder="What's your name dude!!"/>
+        <input type="text" name="studentName"
+               placeholder="Enter Username"/>
 
     <input type="Submit"/>
 </form>

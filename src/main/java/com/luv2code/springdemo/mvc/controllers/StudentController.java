@@ -1,5 +1,6 @@
-package com.luv2code.springdemo.mvc;
+package com.luv2code.springdemo.mvc.controllers;
 
+import com.luv2code.springdemo.mvc.objects.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -16,14 +17,16 @@ public class StudentController {
         Student theStudent = new Student();
 
         // Add student object to the model
-        theModel.addAttribute("student", theStudent); // student name is same which the JSP view page will refer to
+        theModel.addAttribute("student", theStudent);
+        // student name is same which the JSP view page will refer to
 
         return "student-form";
     }
 
     @RequestMapping("/processForm")
-    public String processForm(@ModelAttribute("student") Student theStudent) {
+    public String processForm(@ModelAttribute("student") Student theStudent,Model model) {
         String studentName = (theStudent.getFirstName() + " " + theStudent.getLastName());
+        model.addAttribute("name",studentName);
 
         return "student-confirmation";
     }

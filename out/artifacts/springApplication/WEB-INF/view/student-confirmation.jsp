@@ -8,16 +8,12 @@
 <body>
 <img src="${pageContext.request.contextPath}/resources/images/springboot.jpg">
 
-The Student is Confirmed: ${student.firstName} ${student.lastName}
-<br>
-<br>
+Student Registered: ${name}
+<br><br>
 Country=${student.country}
 <br>
 City=${student.cityOptions}
 
-<a href="/"> Home Page</a>
-
 </body>
-
 </head>
 </HTML>

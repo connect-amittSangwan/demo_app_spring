@@ -11,12 +11,9 @@
 <form:form action="processForm" modelAttribute="student">
 
     Enter First Name: <form:input path="firstName"/>
-    <br>
-    <br>
+            <br><br>
     Enter Last Name: <form:input path="lastName"/>
-    <br>
-    <br>
-
+            <br><br>
 
     <form:select path="country">
         <form:option value="Ind" label="India"></form:option>
@@ -24,25 +21,16 @@
         <form:option value="USA" label="Uneited States Of America"></form:option>
         <form:option value="FR" label="France"></form:option>
     </form:select>
-
-    <br>
-    <br>
-
+    <br><br>
 
     <form:select path="cityOptions">
         <form:options items="${student.cityOptions}"/>
     </form:select>
-    <br>
-    <br>
-
+    <br><br>
 
     <input type="submit" value="Submit"/>
-
 </form:form>
 
-<a href="/"> Home Page</a>
-
 </body>
-
 </head>
 </HTML>

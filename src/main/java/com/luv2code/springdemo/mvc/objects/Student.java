@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.mvc;
+package com.luv2code.springdemo.mvc.objects;
 
 import java.util.LinkedHashMap;
 
@@ -11,11 +11,9 @@ public class Student {
     private LinkedHashMap<String, String> cityOptions;
 
     public Student() {
-        // Populating the city options from constructor;
-
+        // Populating the city options from Constructor;
         cityOptions = new LinkedHashMap<String, String>();
         cityOptions.put("Rht", "Rohtak");
-        ;
         cityOptions.put("Kr", "Karnal");
         cityOptions.put("Ch", "Chandigarh");
         cityOptions.put("Ddr", "Dadri");
@@ -51,5 +49,4 @@ public class Student {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
 }

@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.mvc;
+package com.luv2code.springdemo.mvc.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,22 +11,21 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class HelloWorldController {
 
-
-    //Controller method to show the initial HTML Form
+    //Controller method to SHOW the initial HTML Form
     @RequestMapping("/showForm")
-    public String showForm() {
+    public String showForm()
+    {
         return "helloworld-form";
     }
 
-
-    //Controller to process the HTML Form
+    //Controller to PROCESS the HTML Form
     @RequestMapping("/processForm")
     public String processForm(HttpServletRequest request, Model model) {
 
         String studentName = request.getParameter("studentName");
         studentName = studentName.toUpperCase();
 
-        String UpdatedData = "Hey You Mother Fucker.. " + studentName;
+        String UpdatedData = "Hello, " + studentName;
 
         model.addAttribute("name", UpdatedData);
 

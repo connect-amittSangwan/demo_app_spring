@@ -15,7 +15,7 @@
     <!--Add Support to component scanning -->
     <context:component-scan base-package="com.luv2code.springdemo"/>
 
-    <!--Add Support for convertion,validation and formatting support -->
+    <!--Add Support for conversion,validation and formatting support -->
     <mvc:annotation-driven/>
 
     <!--Defining resrource mapping location-->
