@@ -12,7 +12,8 @@
 <head>
     <title> Customer Registeration Form </title>
         <style>
-            .error{color: darkred}
+            .error{color: #e7ee60
+            }
         </style>
 </head>
 <body>

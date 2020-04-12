@@ -6,11 +6,11 @@ import javax.validation.constraints.Size;
 public class Customer {
 
     @NotNull
-    @Size(min = 10, message = "Min size is 4")
+    @Size(min = 4, message = "Min size is 4")
     private String firstName;
 
     @NotNull
-    @Size(min = 4,max = 4)
+    @Size(min = 4,max = 6)
     private String lastName;
 
     @NotNull
