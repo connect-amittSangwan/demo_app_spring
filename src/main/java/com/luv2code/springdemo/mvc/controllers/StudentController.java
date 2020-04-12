@@ -1,10 +1,13 @@
 package com.luv2code.springdemo.mvc.controllers;
 
 import com.luv2code.springdemo.mvc.objects.Student;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.HashMap;
 
 @RequestMapping("/student")
 @Controller
@@ -18,7 +21,6 @@ public class StudentController {
 
         // Add student object to the model
         theModel.addAttribute("student", theStudent);
-        // student name is same which the JSP view page will refer to
 
         return "student-form";
     }

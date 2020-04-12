@@ -9,7 +9,7 @@ public class HomeController {
     @RequestMapping("/")
     public String showPage()
     {
-        return "main-menu-basics";
+        return "main-menu-validators";
     }
 
 }

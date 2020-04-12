@@ -28,7 +28,24 @@
     </form:select>
     <br><br>
 
+    Fauvorite Language
+    <form:radiobutton path="favouriteLanguage" value="JAVA" label="JAVA"/>
+    <form:radiobutton path="favouriteLanguage" value="C++" label="C++"/>
+    <form:radiobutton path="favouriteLanguage" value="PHP" label="PHP"/>
+    <form:radiobutton path="favouriteLanguage" value="C#" label="C#"/>
+
+    <br>Operting System:
+    Windows <form:checkbox path="operatingSystem" value="Windows"/>
+    Linux <form:checkbox path="operatingSystem" value="Linux"/>
+    Mac <form:checkbox path="operatingSystem" value="Mac OS"/>
+    Android <form:checkbox path="operatingSystem" value="Android 8.0"/>
+
+    <br>Tell Something about you:<br><form:textarea path="description"/>
+    <br>
+
     <input type="submit" value="Submit"/>
+
+
 </form:form>
 
 </body>

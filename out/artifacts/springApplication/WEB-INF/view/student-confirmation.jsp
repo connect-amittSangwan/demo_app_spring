@@ -8,11 +8,18 @@
 <body>
 <img src="${pageContext.request.contextPath}/resources/images/springboot.jpg">
 
-Student Registered: ${name}
+Registration Name: ${name}
 <br><br>
 Country=${student.country}
 <br>
 City=${student.cityOptions}
+<br>
+Operting System: ${student.operatingSystem}
+
+<br>
+Loves to Code in: ${student.favouriteLanguage}
+<br>
+Desciption Submitted:<br>${student.description}
 
 </body>
 </head>

@@ -1,5 +1,6 @@
 package com.luv2code.springdemo.mvc.objects;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 //Created POJO Class to load data into the Model
@@ -9,6 +10,35 @@ public class Student {
     private String lastName;
     private String country;
     private LinkedHashMap<String, String> cityOptions;
+    private String favouriteLanguage;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    private String description;
+
+    public String getOperatingSystem() {
+        return operatingSystem;
+    }
+
+    public void setOperatingSystem(String operatingSystem) {
+        this.operatingSystem = operatingSystem;
+    }
+
+    private String operatingSystem;
+
+    public String getFavouriteLanguage() {
+        return favouriteLanguage;
+    }
+
+    public void setFavouriteLanguage(String favouriteLanguage) {
+        this.favouriteLanguage = favouriteLanguage;
+    }
 
     public Student() {
         // Populating the city options from Constructor;
