@@ -13,7 +13,6 @@
       <root url="jar://$PROJECT_DIR$/lib/javax.annotation.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.ejb.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.jms.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.resource.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/" />
@@ -38,8 +37,10 @@
       <root url="jar://$PROJECT_DIR$/lib/spring-tx-5.2.3.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/spring-web-5.2.3.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/spring-webmvc-5.2.3.RELEASE.jar!/" />
+      <root url="file://$PROJECT_DIR$/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" />
   </library>
 </component>
